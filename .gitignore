@@ -1,0 +1,5 @@
+Project Details/
+venv/
+README.md
+data_scripts/streaming_data.py
+.env

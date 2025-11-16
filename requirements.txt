@@ -1,0 +1,18 @@
+# Core data handling
+pandas
+
+# Parquet support
+pyarrow
+fastparquet
+
+# Excel support
+openpyxl
+
+# XML support
+lxml
+
+# Kafka
+kafka-python
+
+# PostgreSQL driver
+psycopg2-binary
