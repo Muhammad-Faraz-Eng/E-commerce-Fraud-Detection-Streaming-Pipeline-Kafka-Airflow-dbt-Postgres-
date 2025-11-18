@@ -1,5 +1,23 @@
-Project Details/
-venv/
-README.md
-data_scripts/streaming_data.py
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Python build/cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files and secrets
 .env
+.env.*
+*.env
+
+
+
+# Editor/IDE settings
+.vscode/
+.idea/
+
+# Trae/temporary files
+*.local

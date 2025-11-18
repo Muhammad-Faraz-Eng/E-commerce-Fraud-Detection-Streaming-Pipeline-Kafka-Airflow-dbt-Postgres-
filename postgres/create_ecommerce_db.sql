@@ -1,0 +1,10 @@
+CREATE SCHEMA IF NOT EXISTS raw;
+CREATE SCHEMA IF NOT EXISTS staging;
+CREATE SCHEMA IF NOT EXISTS marts;
+
+CREATE TABLE IF NOT EXISTS raw.transactions_stream (
+    id SERIAL PRIMARY KEY,
+    topic TEXT,
+    message JSONB,
+    received_at TIMESTAMP DEFAULT NOW()
+);

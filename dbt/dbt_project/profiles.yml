@@ -1,0 +1,12 @@
+dbt_project:
+  outputs:
+    dev:
+      dbname: fraud_db
+      host: postgres
+      pass: <placeholder>
+      port: 5432
+      schema: raw
+      threads: 4
+      type: postgres
+      user: <placeholder>
+  target: dev

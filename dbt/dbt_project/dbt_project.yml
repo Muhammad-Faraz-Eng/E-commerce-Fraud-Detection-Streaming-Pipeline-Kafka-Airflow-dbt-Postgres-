@@ -1,0 +1,28 @@
+name: 'dbt_project'
+version: '1.0.0'
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_project'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+models:
+  dbt_project:
+    staging:
+      +schema: staging       
+      +materialized: incremental
+      +incremental_strategy: merge
+    marts:
+      +schema: marts         
+      +materialized: incremental
+      +incremental_strategy: merge

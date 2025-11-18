@@ -1,0 +1,6 @@
+sources:
+  - name: raw
+    schema: raw
+    database: fraud_db
+    tables:
+      - name: transactions_stream
